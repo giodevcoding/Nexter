@@ -1,7 +1,7 @@
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
@@ -9,5 +9,18 @@
 
 html,
 :root {
+    box-sizing: border-box;
+
     font-size: 62.5%;
+    
+    @include respond-to('xl') {
+        font-size: 56.25%;
+    }
+}
+
+body {
+    color: $color-grey-dark-2;
+    font-family: $font-primary;
+    font-weight: 300;
+    line-height: 1.6;
 }

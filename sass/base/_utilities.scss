@@ -1,0 +1,64 @@
+.u-mb-sm {
+    @include responsive-utility(margin-bottom, $vertical-sm);
+}
+
+.u-mb-md {
+    @include responsive-utility(margin-bottom, $vertical-md);
+}
+
+.u-mb-lg {
+    @include responsive-utility(margin-bottom, $vertical-lg);
+}
+
+.u-mb-xl {
+    @include responsive-utility(margin-bottom, $vertical-xl);
+}
+
+.u-mb-xxl {
+    @include responsive-utility(margin-bottom, $vertical-xxl);
+}
+
+.u-mt-sm {
+    @include responsive-utility(margin-top, $vertical-sm);
+}
+
+.u-mt-md {
+    @include responsive-utility(margin-top, $vertical-md);
+}
+
+.u-mt-lg {
+    @include responsive-utility(margin-top, $vertical-lg);
+}
+
+.u-mt-xl {
+    @include responsive-utility(margin-top, $vertical-xl);
+}
+
+.u-mt-xxl {
+    @include responsive-utility(margin-top, $vertical-xxl);
+}
+
+.u-mv-sm {
+    @include responsive-utility(margin-top, $vertical-sm);
+    @include responsive-utility(margin-bottom, $vertical-sm);
+}
+
+.u-mv-md {
+    @include responsive-utility(margin-top, $vertical-md);
+    @include responsive-utility(margin-bottom, $vertical-md);
+}
+
+.u-mv-lg {
+    @include responsive-utility(margin-top, $vertical-lg);
+    @include responsive-utility(margin-bottom, $vertical-lg);
+}
+
+.u-mv-xl {
+    @include responsive-utility(margin-top, $vertical-xl);
+    @include responsive-utility(margin-bottom, $vertical-xl);
+}
+
+.u-mv-xxl {
+    @include responsive-utility(margin-top, $vertical-xxl);
+    @include responsive-utility(margin-bottom, $vertical-xxl);
+}

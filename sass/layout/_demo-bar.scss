@@ -1,0 +1,72 @@
+.demo-bar {
+    display: none;
+    width: 100%;
+    padding: .5rem;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+    grid-template-columns: 1fr minmax(min-content, max-content) 1fr;
+    grid-auto-rows: min-content;
+    justify-items: center;
+    align-items: center;
+    z-index: 1000;
+    
+    background-color: $color-primary;
+    box-shadow: 0 2rem 2rem $shadow-default;
+
+    @include respond-to('lg') {
+        background-color: $color-secondary;
+    }
+
+    &__text {
+        grid-column: 2 / 3;
+        
+        font-family: $font-primary;
+        font-size: 1.7rem;
+        
+        color: #fff;
+        text-shadow: 1px 1px 1px $shadow-default;
+    }
+    
+    &__link:link,
+    &__link:visited {
+        color: $color-secondary;
+
+        @include respond-to('lg') {
+            color: $color-primary;
+        }
+    }
+    
+    &__exit {
+        display: flex;
+        margin: 0 2rem;
+        
+        grid-column: 3 / 4;
+        justify-self: end;
+        align-content: center;
+        
+        flex-direction: column;
+        justify-content: center;
+
+        cursor: pointer;
+        
+        svg {
+            width: 2rem;
+            height: 2rem;
+
+            fill: #fff;
+        }
+        
+    }
+
+}
+
+#exit-checkbox {
+    display: none;
+    
+    &:checked + .demo-bar {
+        display: grid;
+    }
+}
